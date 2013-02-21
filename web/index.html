@@ -2,8 +2,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Tris</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" media="screen">
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <section id="tris">
+                </section>
+            </div>
+        </div>
+    </div>
 
+    <script type="text/template" id="tpl-init-game">
+        <div id="newGame">
+            <div>
+                <input placeholder="Player1" type="text" name="player1Name" value="" />
+            </div>
+            <div>
+                <input placeholder="Player2" type="text" name="player2Name" value="" />
+            </div>
+            <div>
+                <button>Start</button>
+            </div>
+        </div>
+    </script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/underscore.min.js"></script>
+    <script src="Scripts/backbone.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="js/tris.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-﻿function Tris(player1Name, player2Name) {
+﻿
+function Tris(player1Name, player2Name) {
 
     this.player1 = new Player(player1Name, 1);
     this.player2 = new Player(player2Name, 2);
@@ -39,7 +40,7 @@
             case GameState.Won:
                 this.lastWonPlayer = this.currentPlayer;
                 break;
-            case GameState.Draw) 
+            case GameState.Draw:
                 break;
             default:
                 throw "Not valid state";
@@ -71,7 +72,7 @@
            this.board[0,2] == this.board[1,1] == this.board[2,0])
             result = GameState.Won;
 
-        if(result != games.Won){        
+        if(result != GameState.Won){        
             var noMove = true;
             for(var i in this.board){
                 if(this.board[i] == 0){
@@ -89,6 +90,7 @@
 }
 
 function Player(name, number) {
+    this.name = name;
     this.score = 0;
     this.number = number;
 }
